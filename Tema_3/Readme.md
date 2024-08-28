@@ -1,6 +1,12 @@
 Inserciones simples y cargas de datos desde CSV con JDBC
 ==============================================================
 
+## Repositorios con código de apoyo
+| Orientación | Repositorio | Descripción
+|--|--|--|
+| Relacional | [JDBC con MySQL y Oracle DB](https://github.com/UnirCs/bbdda-jdbc) |  Aplicación Java con Maven que nos permite conectar a bases de datos relacionales MySQL y Oracle Database usando JDBC, una de las alternativas de más bajo nivel que podemos encontrar.
+
+
 Una vez que hemos jugado con las consultas y conocemos una parte considerable de los esquemas vamos a pasar a introducir información en ellos.
 
 Los objetivos de este ejercicio son:
@@ -13,7 +19,6 @@ Los objetivos de este ejercicio son:
 Dado que trabajaremos con dos bases de datos diferentes, MySQL y Oracle, necesitaremos usar dos drivers diferentes, uno para cada base de datos.
 Cada driver nos permitirá obtener una conexión a la base de datos, y a partir de ahí, ejecutar consultas SQL.
 
-Puedes encontrar el código de apoyo que cuenta con estas dependencias en el siguiente [repositorio de GitHub](https://github.com/UnirCs/bbdda-jdbc).
 
 ## 1. Inserción simple
 

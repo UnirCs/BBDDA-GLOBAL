@@ -1,6 +1,13 @@
 JPA y Hibernate
 ==============================================================
 
+## Repositorios con código de apoyo
+| Orientación | Repositorio | Descripción
+|--|--|--|
+| Relacional | [JDBC con MySQL y Oracle DB](https://github.com/UnirCs/bbdda-jdbc) |  Aplicación Java con Maven que nos permite conectar a bases de datos relacionales MySQL y Oracle Database usando JDBC, una de las alternativas de más bajo nivel que podemos encontrar.
+| Relacional | [JPA + Hibernate](https://github.com/UnirCs/bbdda-hibernate) |  Aplicación Java con Maven que nos permite conectar a bases de datos relacionales MySQL y usar Hibernate, la implementación más popular de JPA.
+
+
 Una vez que hemos jugado con las consultas y conocemos una parte considerable de los esquemas vamos a pasar a introducir información en ellos.
 
 Los objetivos de este ejercicio son:

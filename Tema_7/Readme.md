@@ -1,5 +1,11 @@
 # Transacciones con Spring y Spring Data JPA
 
+## Repositorios con código de apoyo
+| Orientación | Repositorio | Descripción
+|--|--|--|
+| Relacional | [JPA + Spring Data](https://github.com/UnirCs/bbdda-spring-data) |  Aplicación Java con Maven que nos permite conectar a bases de datos relacionales MySQL y usar Spring Data.
+
+
 ## 1. Introducción a Transactional
 
 ``@Transactional`` es una anotación que se incluye dentro del framework de Spring. Las operaciones que se realicen dentro de un método con esta anotación se realizarán de forma transaccional, es decir, en bloque. Para el ejercicio que vamos a realizar no es necesario utilizar los parámetros opcionales que esta anotación incluye, pero, si quieres aprender más sobre ellos puedes revisar [esta guía de Baeldung](https://www.baeldung.com/transaction-configuration-with-jpa-and-spring).

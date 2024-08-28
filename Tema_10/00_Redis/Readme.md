@@ -1,5 +1,11 @@
 # Implementación de una caché con Redis y Spring Boot
 
+## Repositorios con código de apoyo
+| Orientación | Repositorio | Descripción
+|--|--|--|
+| Relacional | [JPA + Spring Data](https://github.com/UnirCs/bbdda-spring-data) |  Aplicación Java con Maven que nos permite conectar a bases de datos relacionales MySQL y usar Spring Data.
+
+
 Con este ejercicio buscamos hacer uso de una caché en un microservicio que está fuertemente orientado a consultas.
 
 Hablamos del que implementamos en ejercicio opcional del tema 5, que permitía obtener información sobre empleados de una empresa.

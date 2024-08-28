@@ -1,5 +1,11 @@
 # Spring Data JPA
 
+## Repositorios con código de apoyo
+| Orientación | Repositorio | Descripción
+|--|--|--|
+| Relacional | [JPA + Spring Data](https://github.com/UnirCs/bbdda-spring-data) |  Aplicación Java con Maven que nos permite conectar a bases de datos relacionales MySQL y usar Spring Data.
+
+
 ## 1. Introducción a Spring
 
 Spring es un framework de desarrollo para Java que proporciona una infraestructura integral para desarrollar aplicaciones Java. Es conocido por su inyección de dependencias y su modelo de programación orientado a aspectos. Permite a los desarrolladores crear aplicaciones de alto rendimiento con una configuración simplificada y un soporte robusto para transacciones de base de datos y REST APIs. Para más detalles, consulta la [documentación oficial de Spring](https://docs.spring.io/spring-framework/docs/current/reference/html/).
@@ -20,7 +26,7 @@ Mejorarás el esquema `Employee`, completando las entidades faltantes, ampliará
 
 ### Parte 2: Ampliación de Repositorios
 
-2. **Métodos de Repositorio**: Implementar cinco nuevos métodos en los repositorios `EmployeeRepository` y `DepartmentRepository` (entre ambos) usando la derivación de nombres de Spring Data JPA. Tienes el enlace a la documentación oficial de Spring Data JPA en el [código de apoyo](https://github.com/UnirCs/bbdda-spring-data) y en las diapositivas.
+2. **Métodos de Repositorio**: Implementar cinco nuevos métodos en los repositorios `EmployeeRepository` y `DepartmentRepository` (entre ambos) usando la derivación de nombres de Spring Data JPA. Utiliza el código de apoyo.
 
 ### Parte 3: Nuevos Endpoints en Controladores
 
