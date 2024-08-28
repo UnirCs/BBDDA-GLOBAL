@@ -115,7 +115,7 @@ A partir de este momento ya puedes hacer pruebas. Busca datos en la base de dato
 
 Desde postman, una petición para consumir el endpoint construido sería esta:
 
-<img width="416" alt="Postman" src="!https://github.com/user-attachments/assets/54dc7d1c-072e-40b7-8e0b-ca46480d3758">
+<img width="416" alt="Postman" src="https://github.com/user-attachments/assets/54dc7d1c-072e-40b7-8e0b-ca46480d3758">
 
 ## 4. Entrega
 
