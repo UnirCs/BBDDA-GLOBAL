@@ -11,11 +11,11 @@ Trabajaremos con MySQL (versión latest) y Oracle Database (versión 19c Enterpr
 
 ## 2. Instalación de MySQL
 
-Sigue las instrucciones que encontrarás [aquí](https://github.com/UnirCs/BBDD-PER8263-2324/blob/master/Tema_1/00_Resources/mysql/Readme.md).
+Sigue las instrucciones que encontrarás [aquí](https://github.com/UnirCs/BBDDA-GLOBAL/blob/master/Tema_1/00_Resources/mysql/Readme.md).
 
 ## 3. Instalación de Oracle Database 19c EE
 
-Sigue las instrucciones que encontrarás [aquí](https://github.com/UnirCs/BBDD-PER8263-2324/tree/master/Tema_1/00_Resources/oracle).
+Sigue las instrucciones que encontrarás [aquí](https://github.com/UnirCs/BBDDA-GLOBAL/tree/master/Tema_1/00_Resources/oracle).
 
 ## 4. Entrega
 
