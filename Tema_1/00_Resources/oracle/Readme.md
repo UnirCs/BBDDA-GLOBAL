@@ -3,6 +3,14 @@ Instalación de Oracle Database 19c Enterprise Edition
 
 ## Parte I: Creación de la imagen Docker de la base de datos
 
+> [!NOTE]  
+> Si no puedes descargar correctamente el software de Oracle, puedes usar las versiones de archivo que están disponibles en este repositorio.
+> - Utiliza [docker-images-main-arm.zip](docker-images-main-arm.zip) si tienes un ordenador con arquitectura ARM.
+> - Utiliza [docker-images-main-x86.zip](docker-images-main-x86.zip) si tienes un ordenador con arquitectura X86-64.
+>
+> Si eliges esta opción, tras descomprimir el archivo que te corresponda, salta directamente al final de la Parte I, donde se explica de qué forma ejecutar el script de creación de la imagen ``buildContainerImage.sh``.
+
+
 En este caso somos nosotros los que tendremos que generar la imagen docker de la base de datos para poder crear luego un contenedor a partir de ella. Lo primero que haremos será descargar los binarios de la base de datos Oracle Database 19c. Para ello iremos a su [centro de descargas](https://www.oracle.com/es/downloads/):
 
 <img src="https://raw.githubusercontent.com/UnirCs/BBDDA-GLOBAL/master/Tema_1/00_Resources/imgs/ora1_download.png">
