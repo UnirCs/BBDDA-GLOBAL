@@ -5,9 +5,9 @@ Instalación de Oracle Database 19c Enterprise Edition
 
 > [!NOTE]  
 > Si no puedes descargar correctamente el software de Oracle, puedes usar las versiones de archivo que están disponibles en este repositorio.
-> - Utiliza [docker-images-main-arm.zip](docker-images-main-arm.zip) si tienes un ordenador con arquitectura ARM.
-> - Utiliza [docker-images-main-x86.zip](docker-images-main-x86.zip) si tienes un ordenador con arquitectura X86-64.
->
+> - Utiliza [docker-images-main-arm.zip](https://alumnosunir-my.sharepoint.com/:u:/g/personal/jesus_perez_comunidadunir_net/EX89HxLpcoZHiUYNvAhsSmYBt3Jkf821-o7EL5g19YzxnQ?e=x1qnnn) si tienes un ordenador con arquitectura ARM.
+> - Utiliza [docker-images-main-x86.zip](https://alumnosunir-my.sharepoint.com/:u:/g/personal/jesus_perez_comunidadunir_net/EeRkq1PUPlFAnTt2JWzkbTsBLDgrqRcGkXR0YpPr8qFtOA?e=0K2VBY) si tienes un ordenador con arquitectura X86-64.
+> 
 > Si eliges esta opción, tras descomprimir el archivo que te corresponda, salta directamente al final de la Parte I, donde se explica de qué forma ejecutar el script de creación de la imagen ``buildContainerImage.sh``.
 
 
