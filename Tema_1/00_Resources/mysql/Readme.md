@@ -44,7 +44,11 @@ Conectaremos con la base de datos MySQL a través de DataGrip y ejecutaremos alg
      <img src="https://raw.githubusercontent.com/UnirCs/BBDDA-GLOBAL/master/Tema_1/00_Resources/imgs/4_Seleccion%20de%20db.png">
      
    - Introducimos los datos necesarios teniendo en cuenta los valores que usamos durante la creación del contenedor (usuario ``root`` y contraseña ``mysql``). El host siempre será localhost y el puerto es ``3306`` puesto que ese fue el que expusimos al exterior en nuestro contenedor.
-     
+
+     > [ATENCIÓN]  
+     > La primera vez que te conectes a la base de datos, DataGrip te pedirá descargar los `drivers` de conexión. Son necesarios para que DataGrip sepa de qué forma conectar con esta base de datos.
+     >
+      
      <img src="https://raw.githubusercontent.com/UnirCs/BBDDA-GLOBAL/master/Tema_1/00_Resources/imgs/5_Setup%20de%20db%20mysql.png">
      
    - Probamos la conexión. Debe aparecer una mensaje en verde indicando que hay conectividad.
