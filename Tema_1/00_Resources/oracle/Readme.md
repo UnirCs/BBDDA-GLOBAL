@@ -27,7 +27,14 @@ Haremos click en ``Continue`` arriba a la derecha y pasaremos al chekout.
 
 Desmarcaremos todas las opciones a excepción de la base de datos en sí que es lo único que nos interesa descargar. En este punto es importante seleccionar la plataforma que corresponda con nuestro ordenador. Si nuestro procesador es ARM (por ejemplo, los últimos Mac de Apple) debemos elegir la opción ``Linux ARM 64-bit``. Si nuestra máquina tiene una arquitectura X86-64 seleccionamos la opción ``Linux x86-64``. En ningún caso seleccionaremos otra plataforma.
 
+> [!WARNING]  
+> Aunque tu sistema operativo anfitrión no sea Linux debes elegir las opciones de Linux (si usas Windows no elijas `Microsoft Windows`), ya que vamos a virtualizar un sistema operativo huésped basado en Linux.
+
 <img src="https://raw.githubusercontent.com/UnirCs/BBDDA-GLOBAL/master/Tema_1/00_Resources/imgs/ora4_download.png">
+
+> [!NOTE]  
+> Desde Oracle se descargará un archivo exe, pkg o dmg (ejecutable). Debes ejecutar dicho archivo. Se trata de un gestor de descargas de Oracle a través del cuál descargas el archivo ZIP
+
 
 Una vez que haya finalizado la descarga (puede tardar unos minutos) no descomprimiremos el ZIP descargado, si no que lo renombraremos, en funcion de la arquitectura de nuestro procesador.
      
@@ -40,6 +47,10 @@ Descargamos el [repositorio de imágenes de Docker de Oracle](https://github.com
 Una vez descargado el repositorio, navegamos hasta la carpeta ``/OracleDatabase/SingleInstance/dockerfiles/19.3.0/`` y copiamos ahí el archivo ZIP de la base de datos de Oracle que hemos descargado anteriormente.
 
 <img src="https://raw.githubusercontent.com/UnirCs/BBDDA-GLOBAL/master/Tema_1/00_Resources/imgs/ora5_folder.png">
+
+> [!WARNING]  
+> Si utilizas una máquina Windows debes tener instalado [Git Bash](https://git-scm.com/downloads), [Cygwin](https://www.cygwin.com/install.html) o [Linux Subsystem](https://techcommunity.microsoft.com/t5/windows-11/how-to-install-the-linux-windows-subsystem-in-windows-11/m-p/2701207). Si no, no podrás ejecutar scripts bash en windows.
+
 
 Ejecutamos el script ``buildContainerImage.sh`` Esto creará una imagen Docker que podremos usar para crear un contenedor (esto puede tardar varios minutos, dependiendo de tu conexión a internet y la eficiencia de tu máquina).
    
@@ -97,6 +108,9 @@ Creamos la conexión a la base de datos de Oracle en DataGrip. Para ello, en la 
 <img src="https://raw.githubusercontent.com/UnirCs/BBDDA-GLOBAL/master/Tema_1/00_Resources/imgs/ora8_datagrip.png">
 
 Introducimos los datos necesarios teniendo en cuenta los valores que usamos durante la creación del contenedor (usuario ``HR`` y contraseña ``oracle``). El servicio es ``orcl`` y el host siempre será localhost. El puerto es ``1521`` puesto que ese fue el que expusimos al exterior en nuestro contenedor. Asegúrate de que el tipo de conexión sea mediante ``Service Name``.
+
+> [!WARNING]  
+> La primera vez que te conectes a la base de datos, DataGrip te pedirá descargar los `drivers` de conexión. Son necesarios para que DataGrip sepa de qué forma conectar con esta base de datos.
      
 <img src="https://raw.githubusercontent.com/UnirCs/BBDDA-GLOBAL/master/Tema_1/00_Resources/imgs/ora9_datagrip.png">
 
