@@ -39,5 +39,4 @@ Realiza las siguientes tareas:
 
 Crea una carpeta con tu nombre y apellidos dentro de ``Tema_3``. Deberás incluir :
 
-- Dos archivos SQL, ``InsercionesEmployees.sql`` y ``InsercionesDepartments.sql``.
 - El código del proyecto Java utilizado para realizar las inserciones con JDBC (debe incluir los ficheros CSV).
