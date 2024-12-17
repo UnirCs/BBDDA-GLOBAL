@@ -83,10 +83,14 @@ erDiagram
     }
 
     Almacen ||--o{ Contenedor : "1:N"
-    Contenedor }o--o{ Producto : "M:N" via Contenido
-    Guia_Envio }o--o{ Contenedor : "M:N" via Detalle_Guia
+
+    Contenido }o--|| Contenedor : "N:1"
+    Contenido }o--|| Producto : "N:1"
+
     Aduana ||--o{ Guia_Envio : "1:N"
 
+    Detalle_Guia }o--|| Guia_Envio : "N:1"
+    Detalle_Guia }o--|| Contenedor : "N:1"
 ```
 
 Código SQL para las consultas:

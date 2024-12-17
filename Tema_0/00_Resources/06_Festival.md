@@ -96,11 +96,18 @@ erDiagram
     }
 
     Artista ||--o{ Concierto : "1:N"
-    Artista }o--o{ Patrocinador : "M:N" via Patrocinio
-    Artista }o--o{ Stand : "M:N" via Merchandising
-    Stand ||--|| Patrocinador : "1:1 (0:1 con 0:1, exclusivo)"
-    Visitante }o--o{ Artista : "M:N via Recomendacion (con rol Visitante recomendador y receptor)"
 
+    Patrocinio }o--|| Artista : "N:1"
+    Patrocinio }o--|| Patrocinador : "N:1"
+
+    Merchandising }o--|| Artista : "N:1"
+    Merchandising }o--|| Stand : "N:1"
+
+    Stand |o--o| Patrocinador : "1:1 opcional"
+
+    Recomendacion }o--|| Visitante : "N:1 (Recomendador)"
+    Recomendacion }o--|| Visitante : "N:1 (Receptor)"
+    Recomendacion }o--|| Artista : "N:1"
 ```
 
 Código SQL para las consultas:

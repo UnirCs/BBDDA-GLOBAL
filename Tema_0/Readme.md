@@ -2,7 +2,7 @@
 
 En esta sección se presentan ejercicios de modelado de datos que abarcan los temas vistos en la asignatura de segundo curso "Bases de Datos" del Grado en Ingeniería Informática de UNIR. En cualquier caso, siéntente libre de realizarlos para refrescar conceptos.
 
-Para cada ejercicio, se presenta un enunciado junto con una posible solución (se recomienda mirarla tras haber intentado solucionar el problema) y se pide realizar lo siguiente:
+Para cada ejercicio, se presenta un enunciado junto con una posible solución (se recomienda mirarla tras haber intentado solucionar el problema. **Las relaciones M:N sean reflexivas o no, se encuentran aplanadas en el diagrama de la solución**) y se pide realizar lo siguiente:
 - Identificar entidades y atributos.
 - Identificar relaciones.
 - Realizar el diagrama E-R correspondiente a través de un editor de [Mermaid](https://mermaid.js.org/). En su [documentación](https://mermaid.js.org/syntax/entityRelationshipDiagram.html) puedes encontrar información sobre cómo realizar diagramas E-R.

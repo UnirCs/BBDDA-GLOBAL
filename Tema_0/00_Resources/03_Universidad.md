@@ -79,11 +79,17 @@ erDiagram
         string ID_Tutorizado
     }
 
-    Curso ||--o{ Imparte : "1:1 (Curso a Profesor Titular)"
-    Curso |o--|| Coordinacion : "0:1 (Curso a Profesor Coordinador)"
-    Estudiante }o--o{ Curso : "M:N" via Matricula
-    Estudiante }o--o{ Estudiante : "M:N Reflexiva (Tutoría)" via Tutoria
+    Imparte }o--|| Curso : "N:1"
+    Imparte }o--|| Profesor : "N:1 (Titular)"
 
+    Coordinacion }o--|| Curso : "N:1"
+    Coordinacion }o--|| Profesor : "N:1 (Coordinador)"
+
+    Matricula }o--|| Curso : "N:1"
+    Matricula }o--|| Estudiante : "N:1"
+
+    Tutoria }o--|| Estudiante : "N:1 (Tutor)"
+    Tutoria }o--|| Estudiante : "N:1 (Tutorizado)"
 ```
 
 Nota: La relación titular (Imparte) es en realidad 1:N desde el profesor al curso (un profesor puede impartir varios cursos), pero el curso debe tener exactamente un profesor titular. La relación coordinador es 0:1 desde el curso a profesor (un curso puede no tener coordinador) y 1:1 desde el profesor (un profesor solo coordina un curso).

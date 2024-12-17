@@ -62,10 +62,13 @@ erDiagram
         string ID_Persona2
     }
 
-    Persona }o--o{ Apellidos_Familiares : "M:N" via Uso_Apellido
-    Persona ||--o{ Persona : "1:N Reflexiva (Paternidad/Maternidad)" 
-    Persona }o--o{ Persona : "M:N Reflexiva (Matrimonio)" via Matrimonio
+    Uso_Apellido }o--|| Persona : "N:1"
+    Uso_Apellido }o--|| Apellidos_Familiares : "N:1"
 
+    Matrimonio }o--|| Persona : "N:1 (Conyuge1)"
+    Matrimonio }o--|| Persona : "N:1 (Conyuge2)"
+
+    Persona ||--o{ Persona : "1:N (Paternidad/Maternidad)"
 ```
 Nota: Para la relación de paternidad/maternidad, se utilizan los atributos ID_Padre e ID_Madre dentro de Persona. Mermaid no muestra esto con líneas directas, pero conceptualmente es una relación reflexiva.
 

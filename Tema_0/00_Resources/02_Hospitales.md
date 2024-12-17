@@ -83,9 +83,12 @@ erDiagram
 
     Paciente ||--|| Seguro : "1:1"
     Paciente ||--o{ Cirugia : "1:N"
+
     Cirujano ||--o{ Cirugia : "1:N (Principal)"
-    Cirujano ||--o{ Cirujano : "1:N (Reflexiva, Supervisor-Subordinado)"
-    Cirujano }o--o{ Cirugia : "M:N (Auxiliares)" via Asistencia_Cirugia
+    Cirujano ||--o{ Cirujano : "1:N (Reflexiva)"
+
+    Asistencia_Cirugia }o--|| Cirugia : "N:1"
+    Asistencia_Cirugia }o--|| Cirujano : "N:1 (Auxiliar)"
 ```
 
 Código SQL para las consultas:

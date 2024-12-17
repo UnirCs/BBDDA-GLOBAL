@@ -67,7 +67,7 @@ erDiagram
     Autor {
         string ID_Autor
         string Nombre
-        date Fecha_Incorporacion_or_Especialidad
+        date Fecha_Incorporacion_o_Especialidad
         string Tipo_Autor
     }
 
@@ -98,10 +98,16 @@ erDiagram
     }
 
     Revista ||--o{ Edicion : "1:N"
-    Edicion ||--o| Version_Impresa : "0:1"
-    Edicion }o--o{ Autor : "M:N" via Autoria
-    Suscriptor }o--o{ Revista : "M:N" via Suscripcion
-    Suscripcion }o--o{ Edicion : "M:N" via Entrega
+    Edicion |o--|| Version_Impresa : "0:1"
+
+    Autoria }o--|| Edicion : "N:1 (cada Autoria refiere a 1 Edicion)"
+    Autoria }o--|| Autor : "N:1 (cada Autoria refiere a 1 Autor)"
+
+    Suscripcion }o--|| Suscriptor : "N:1"
+    Suscripcion }o--|| Revista : "N:1"
+
+    Entrega }o--|| Suscripcion : "N:1"
+    Entrega }o--|| Edicion : "N:1"
 ```
 
 Código SQL para las consultas:
